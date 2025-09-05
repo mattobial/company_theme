@@ -1,0 +1,39 @@
+:root { --famco-gold:#EAA442; }
+
+.layout-side-section,
+.layout-side-section .overlay-sidebar,
+.layout-side-section .list-sidebar {
+  background: var(--famco-gold) !important;
+  background-image: none !important;
+}
+.layout-side-section .overlay-sidebar::before,
+.layout-side-section .list-sidebar::before {
+  background: var(--famco-gold) !important;
+}
+
+/* Let the gold show through inner blocks */
+.layout-side-section .desk-sidebar,
+.layout-side-section .standard-sidebar-section,
+.layout-side-section .sidebar-item-container,
+.layout-side-section .desk-sidebar-item,
+.layout-side-section .standard-sidebar-label,
+.layout-side-section .sidebar-item-control,
+.layout-side-section .sidebar-child-item {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+/* Text & icons on gold */
+.layout-side-section .section-title,
+.layout-side-section a.item-anchor,
+.layout-side-section .sidebar-item-label { color:#111 !important; }
+.layout-side-section .sidebar-item-icon svg {
+  color:#111 !important; fill:#111 !important; stroke:#111 !important;
+}
+
+/* Optional: selected row */
+.layout-side-section .desk-sidebar-item.selected > a.item-anchor {
+  background: rgba(255,255,255,.25) !important;
+  border-radius: 8px !important;
+}
